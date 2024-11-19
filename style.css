@@ -1,0 +1,350 @@
+/*font awesome cdn link */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+
+/*google fonts cdn link */
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+:root{
+    --main-color:#0d65e8e8 ;
+    --red:rgb(236, 1, 1) ;
+    --light-color:#cecacaf1;
+    --light-bg:#888888;
+    --black:#000000;
+    --white:#fff;
+    --box-shadow:0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    --border: 1rem solid rgba(0, 0, 0, 0.2);
+
+}
+*{
+    font-family:'arvo';
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+
+}
+*::selection{
+    background-color: var(--main-color);
+    color: var(--white);
+}
+::-webkit-scrollbar{
+    width: 2rem;
+    height: 5rem;
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+
+html{
+    font-size: 73%;
+    overflow-x: hidden;
+    scroll-padding: 8rem;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(222, 221, 240);
+    background-size: cover; 
+}
+section{
+    padding: 2rem;
+    margin:0 auto;
+    max-width: 1400px;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: var(--white);
+    background-color: var(--main-color);
+    border-radius: 0.5rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+.btn:hover{
+    background-color: var(--black);
+}
+.header{
+    position: relative;
+    top: 0; left: 0; right: 0;
+    background-color : var(--white);
+    box-shadow: var(--box-shadow);
+}
+.header .flex{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#menu-btn{
+    font-size: 2.8rem;
+    color: var(--black);
+    cursor: pointer;
+    display: none;
+
+
+}
+
+.header .flex .logo{
+    font-size: 2.3rem;
+    color: var(--black);
+}
+.header .flex .logo i{
+    margin-right: 0.5rem;
+    color: var(--black);
+}
+.header .flex .navbar a{
+    display: inline;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    color: var(--black );
+    border-radius: 0.5rem;
+    text-transform: capitalize;
+}
+header .flex .navbar a:hover{
+    background-color: var(--main-color);
+    color: var(--white);
+
+}
+.home-container{
+    background: url(./images.png), rgba(167, 166, 166, 0.7) no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: color;
+
+}
+.home-container{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-container .home form{
+    background-color: var(--white);
+    width: 50rem;
+    border-radius: .5rem;
+    padding: 3rem;
+    text-align: center;
+}
+.home-container .home form h3{
+    font-size: 3rem;
+    color: var(--black);
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+}
+.home-container .home form p{
+    text-align: left ;
+    font-size: 1.8rem;
+    color: grey;
+    padding-top: 1.2rem ;
+}
+.home-container .home form p span{
+    color: red;
+}
+.home-container .home form .input{
+    width: 100%;
+    border-radius: .6rem;
+    margin: 1rem;
+    background-color: var(--light-color);
+    padding: 1.4rem;
+    font-size: 1.9rem;
+    color: #000000;
+
+
+
+}
+
+
+
+
+
+
+.navbar div{
+    height: 4px;
+    background-color: #000000;
+    margin: 5px 0;
+    border-radius: 25px;
+    transition: 0.3s;
+
+}
+.nav{
+    width: 30px;
+    display: block;
+    margin: 1em 0 0 1em;
+}
+
+
+.box1{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;  
+    
+      
+}
+
+
+
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; 
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large; 
+    
+    
+}
+.box3{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , 30rem);
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.footer.grid.box h3{
+    font-size: 2px;
+    color: var(--black);
+    margin: 3rem;
+    text-transform: uppercase;
+}
+.footer.grid.box1 a{
+    display: block;
+    padding: 2rem 0;
+    font-size: 1.8rem;
+    color: var(--black);
+}
+footer.grid.box2 a{
+    display: block;
+    padding: 2rem 0;
+    font-size: 1.8rem;
+    color: var(--black);
+}
+footer.grid.box3 a{
+    display: block;
+    padding: 2rem 0;
+    font-size: 1.8rem;
+    color: var(--black);
+}
+
+.footer.grid.box1 a i{
+   color: var(--main-color);
+   margin-right: 0.8rem;
+   transition: .2s linear;
+   
+
+}
+.footer .grid .box1 a:hover i{
+    margin-right: 2rem;
+}
+.footer .grid .box2 a:hover i{
+    margin-right: 2rem;
+}
+.footer .grid .box3 a:hover i{
+    margin-right: 2rem;
+}
+.footer .credit{
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--white);
+    font-size: 2rem;
+    line-height: 1.5;
+
+}
+.footer .credit span{
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+@media(max-width:500px){
+    html{
+        font-size: 60%;
+    }
+}@media(max-width:600px){
+   
+    #menu-btn{
+    display: inline-block;
+   }
+   .header .flex .navbar{
+    position: relative;
+    top: 99%; left: 0; right: 0;
+    border-top: var(--border);
+    background-color: var(--white);
+    padding: 1rem 0.5rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: 0.2s linear;
+   }
+   .header .flex .navbar .active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+   }
+   header .flex .navbar a{
+    display: block;
+    padding: 1.5rem 2rem;
+    
+
+}
+  
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+}
+}
